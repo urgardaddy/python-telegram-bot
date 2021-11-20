@@ -3949,7 +3949,7 @@ class Bot(TelegramObject):
     def edit_chat_invite_link(
         self,
         chat_id: Union[str, int],
-        invite_link: Union[str, ChatInviteLink],
+        invite_link: Union[str, 'ChatInviteLink'],
         expire_date: Union[int, datetime] = None,
         member_limit: int = None,
         timeout: ODVInput[float] = DEFAULT_NONE,
@@ -4033,7 +4033,7 @@ class Bot(TelegramObject):
     def revoke_chat_invite_link(
         self,
         chat_id: Union[str, int],
-        invite_link: Union[str, ChatInviteLink],
+        invite_link: Union[str, 'ChatInviteLink'],
         timeout: ODVInput[float] = DEFAULT_NONE,
         api_kwargs: JSONDict = None,
     ) -> ChatInviteLink:
